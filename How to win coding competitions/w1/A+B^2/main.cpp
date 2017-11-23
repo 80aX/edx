@@ -18,12 +18,12 @@
 
 int main()
 {
-    std::ifstream cin("input.txt");
-    std::ofstream cout("output.txt");
+    std::ifstream fin("input.txt");
+    std::ofstream fout("output.txt");
     
     long long a, b = 0;
-    cin >> a >> b;
-    cout << a + b * b << std::endl;
+    fin >> a >> b;
+    fout << a + b * b << std::endl;
     
     return 0;
 }
