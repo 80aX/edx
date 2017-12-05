@@ -18,7 +18,7 @@
 // The first line of the input file contains an integer number n (1≤n≤15) – the number of 
 // proposed problems. The second line contains n integer numbers t1,t2,…,tn, where ti is the 
 // time, in seconds, which is required to solve the i-th problem. All ti are positive and don't 
-// exceed 105. Please recall that one minute consists of 60 seconds.
+// exceed 10^5. Please recall that one minute consists of 60 seconds.
 
 // Output
 // Output the single number – the maximum number of problems, which Dream Team can solve.
@@ -54,7 +54,7 @@ int main()
         fin >> time_array[i];
     
     for (int i = 0; i < n; ++i) {
-        for (int j = i; j < n; j++) {
+        for (int j = i; j < n; ++j) {
             
             time_counter = 0;
             problems_counter = 0;
